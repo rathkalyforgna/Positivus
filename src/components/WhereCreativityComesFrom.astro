@@ -1,0 +1,59 @@
+---
+import Collapse from "./Collapse.astro";
+import Container from "./Container.astro";
+import Topic from "./Topic.astro";
+
+const teamData = {
+  process: [
+    {
+      label: "Domain-Relevant Skills",
+      content:
+        "When I am creative, it is because I have a clear understanding of the task. For example, when designing a website, I always consider how users interact with the page and put myself in their shoes. This shows my domain-relevant skills, which involve my knowledge and expertise in web design and user experience. According to Amabile, having strong domain-relevant skills allows you to apply your knowledge effectively and innovate within that domain.",
+    },
+    {
+      label: "Creativity-Relevant Processes",
+      content:
+        "My creativity is enhanced in a quiet and friendly environment. This aligns with Amabile’s idea that creativity-relevant processes, such as cognitive flexibility, risk-taking, and working style, are crucial. A quiet and supportive setting fosters my ability to think flexibly and take creative risks, which are essential for generating innovative ideas. In contrast, a noisy or stressful environment hinders my ability to engage in these processes effectively.",
+    },
+    {
+      label: "Task Motivation",
+      content:
+        "I am more creative when I am motivated and feel connected to the task. When I understand the task and its context (e.g., designing a user-friendly website), I am intrinsically motivated. This aligns with Amabile’s concept of task motivation, which is critical for creativity. High motivation drives me to invest more effort and engage deeply with the task, resulting in more creative outcomes.",
+    },
+  ],
+};
+---
+
+<Container>
+  <div class="relative flex flex-col items-center md:flex-row" id="services">
+    <Topic
+      title="Creativity Comes From"
+      description="In Amabile’s Componential Theory of Creativity, creativity is influenced by three key components: domain-relevant skills, creativity-relevant processes, and task motivation."
+    />
+  </div>
+  <div class="my-6">
+    <div class="space-y-10">
+      {
+        teamData.process.map((process, key) => (
+          <Collapse label={process.label} index={key + 1}>
+            {process.content}
+          </Collapse>
+        ))
+      }
+    </div>
+  </div>
+  <div
+    class="flex-col justify-start items-start gap-[26px] inline-flex text-black"
+  >
+    <div class="text-lg font-normal">
+      In personal terms, my experiences align with Amabile’s theory by
+      highlighting the importance of a supportive environment and clear task
+      understanding in fostering creativity. When I am well-prepared and
+      motivated, and when I work in a setting that reduces stress and
+      distraction, I am able to harness my creativity effectively. Conversely,
+      unclear tasks and noisy environments can undermine my creative potential,
+      emphasizing the need for an optimal work environment and clear task
+      definitions to achieve the best results.
+    </div>
+  </div>
+</Container>

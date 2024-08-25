@@ -1,42 +1,56 @@
 ---
-import Container from "./Container.astro"
+import Container from "./Container.astro";
 ---
+
 <Container>
-<div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+  <div
+    class="relative flex flex-col-reverse items-center gap-20 md:flex-row"
+    id="hero"
+  >
     <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <div class="text-left space-y-3">
-            <h1 class="text-5xl font-medium leading-none md:text-6xl">Navigating the <br> digital landscape <br> for success</h1>
-            <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-            <a class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex" rel="noopener noreferrer"  href="https://github.com/manulthanura/Positivus" target="_blank">
-                <h2 class="text-center text-xl font-normal leading-7">Book a consultation</h2>
-            </a>
-        </div>
+      <div class="text-left space-y-3">
+        <h1 class="text-5xl font-medium leading-none md:text-3xl">
+          From Code to Consultancy: My Journey from Cambodia to Empowering
+          Businesses with Technology
+        </h1>
+        <p>Navigating Challenges, Building Solutions</p>
+        <p class="mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12">
+          From Code to Consultancy shares my journey from Cambodia to Australia,
+          where I pursued my dream of becoming a tech consultant. I grew up
+          loving technology and studied computer science at the Royal University
+          of Phnom Penh. After graduating, I worked as a software engineer at a
+          startup, helping to create an app that made payments easier for people
+          in Cambodia. Unfortunately, the startup didn't succeed because it
+          couldn't compete in the market.
+          <br />
+          <br />
+          This experience made me realize that while I had strong tech skills, I
+          needed to learn more about how technology fits into business. So, I decided
+          to challenge myself by moving to Australia to study for a Master of Business
+          Information Systems at Swinburne University of Technology. My goal is to
+          become a tech consultant who can help businesses use technology, especially
+          AI, to solve their problems and succeed in a fast-changing world. This
+          autobiography reflects on my experiences, the lessons I learned, and my
+          journey towards achieving this goal.
+        </p>
+      </div>
     </div>
     <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <img src="/Hero.svg" width="100%" alt="Hero"/>
+      <img src="/me.jpeg" alt="Me" class="hero-img" />
     </div>
-</div>
-
-<div class="flex-row items-center">
-    <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/01.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/02.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/03.svg" class="h-9 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/04.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/05.svg" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/06.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-    </div>
-</div>
+  </div>
 </Container>
+
+<style>
+  .hero-img {
+    /* aspect-ratio: 5 / 4; */
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1.5rem;
+    box-shadow:
+      0px 28px 11px rgba(255, 255, 255, 0.01),
+      0px 16px 10px rgba(255, 255, 255, 0.03),
+      0px 7px 7px rgba(255, 255, 255, 0.05),
+      0px 2px 4px rgba(255, 255, 255, 0.06);
+  }
+</style>

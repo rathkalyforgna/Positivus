@@ -1,0 +1,40 @@
+---
+import Container from "./Container.astro";
+import Topic from "./Topic.astro";
+---
+
+<Container>
+  <div class="relative flex flex-col items-center md:flex-row" id="services">
+    <Topic title="My Poem" description="" />
+  </div>
+  <div
+    class="flex-row items-center my-6 p-14 bg-black text-white rounded-[45px]"
+  >
+    <div
+      class="justify-items-center relative w-full border border-lime rounded-3xl"
+    >
+      <div class="p-4 md:p-10">
+        <p
+          class="items-center justify-center text-white text-sm md:text-lg font-normal mb-4"
+        >
+          <span>"Out of the night that covers me,</span>
+          <br />
+          <span>Black as the pit from pole to pole,</span>
+          <br />
+          <span>I thank whatever gods may be</span>
+          <br />
+          <span>For my unconquerable soul.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex-col justify-start items-start gap-[26px] inline-flex text-black"
+  >
+    <div class="text-lg font-normal">
+      The poem is about personal resilience and the ability to endure and remain
+      strong despite facing great difficulties, which mirrors my story of
+      navigating setbacks and pursuing a new path.
+    </div>
+  </div>
+</Container>
